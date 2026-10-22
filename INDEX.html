@@ -1,0 +1,442 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John Charlie Bacla-an | Eat. Sleep. Repeat.</title>
+  <meta name="description" content="Personal portfolio of John Charlie Bacla-an, aspiring web developer, gamer, and travel enthusiast.">
+  <meta name="theme-color" content="#05060b">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div id="scrollbar" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <nav class="nav-inner" aria-label="Main navigation">
+    <a href="#home" class="logo">JCB<span>.</span></a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="links" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="links" id="links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#favorites">Favorites</a>
+      <a href="#contact" class="btn btn-sm">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<main id="main">
+
+<section class="hero" id="home">
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow reveal">Hello, I'm</p>
+      <h1 class="reveal d1">John Charlie<br><span class="grad">Bacla-an</span></h1>
+      <p class="headline reveal d2">Building Ideas Into Digital Experiences.</p>
+      <p class="sub reveal d3">Aspiring Web Developer | Creative Thinker | Tech Enthusiast</p>
+      <div class="cta reveal d4">
+        <a href="#projects" class="btn">Explore My Work</a>
+        <a href="#about" class="btn btn-ghost">About Me</a>
+      </div>
+    </div>
+
+    <div class="scene reveal d3" aria-hidden="true">
+      <div class="orbit"></div>
+      <div class="cube" id="cube">
+        <div class="face f1">HTML</div>
+        <div class="face f2">CSS</div>
+        <div class="face f3">JS</div>
+        <div class="face f4">SQL</div>
+        <div class="face f5">Java</div>
+        <div class="face f6">UI/UX</div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-ind" aria-label="Scroll to About section">
+    <span class="mouse"><i></i></span>
+    <small>Scroll</small>
+  </a>
+</section>
+
+<section class="section about" id="about">
+  <div class="wrap split">
+    <div class="avatar-wrap reveal">
+      <div class="avatar">
+        <img src="charlie.jpg" alt="John Charlie Bacla-an" onerror="this.style.display='none'">
+        <svg viewBox="0 0 400 480" role="img" aria-label="JCB initials">
+          <defs>
+            <linearGradient id="ag" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#3b82f6"/>
+              <stop offset="1" stop-color="#8b5cf6"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="480" fill="#0b0d18"/>
+          <circle cx="200" cy="190" r="120" fill="url(#ag)" opacity=".25"/>
+          <circle cx="200" cy="190" r="80" fill="none" stroke="url(#ag)" stroke-width="3"/>
+          <text x="200" y="215" text-anchor="middle" font-size="72" font-weight="800" fill="url(#ag)">JCB</text>
+          <path d="M60 480c10-110 70-150 140-150s130 40 140 150z" fill="url(#ag)" opacity=".18"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="about-copy">
+      <p class="eyebrow reveal">About me</p>
+      <h2 class="reveal d1">Curious by nature,<br><span class="grad">builder by choice.</span></h2>
+      <p class="reveal d2">I'm John Charlie Bacla-an, an aspiring web developer who enjoys turning ideas into clean, usable interfaces. I like understanding how things work, from databases to the pixels on screen.</p>
+      <p class="reveal d3">I enjoy learning new technologies, playing mobile games, and exploring beautiful places. My goal is to improve my skills and build websites that people enjoy using.</p>
+
+      <div class="chips reveal d4">
+        <div class="glass mini">
+          <h3>Interests</h3>
+          <ul>
+            <li>Web design</li>
+            <li>Databases</li>
+            <li>Gaming and technology</li>
+            <li>Travel and adventure</li>
+          </ul>
+        </div>
+        <div class="glass mini">
+          <h3>Goals</h3>
+          <ul>
+            <li>Build real projects</li>
+            <li>Master full-stack development</li>
+            <li>Grow as a developer</li>
+            <li>Explore new places</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="profile-facts reveal d4">
+        <div class="fact glass">
+          <span class="fact-icon">🎂</span>
+          <div><small>Birthdate</small><strong>August 6, 2006</strong></div>
+        </div>
+        <div class="fact glass">
+          <span class="fact-icon">📍</span>
+          <div><small>Address</small><strong>Olango Island, Lapu-Lapu City</strong></div>
+        </div>
+        <div class="fact glass">
+          <span class="fact-icon">🎮</span>
+          <div><small>Interests</small><strong>CODM, Mobile Legends &amp; Travel</strong></div>
+        </div>
+        <div class="fact glass">
+          <span class="fact-icon">🔁</span>
+          <div><small>My talent</small><strong>Eat, Sleep, Repeat.</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quick-intro">
+  <div class="wrap quick-grid">
+    <div class="quick-item"><strong>01</strong><span>Curious learner</span></div>
+    <div class="quick-item"><strong>02</strong><span>Mobile gamer</span></div>
+    <div class="quick-item"><strong>03</strong><span>Travel enthusiast</span></div>
+    <div class="quick-item"><strong>∞</strong><span>Eat. Sleep. Repeat.</span></div>
+  </div>
+</section>
+
+<section class="section skills" id="skills">
+  <div class="wrap">
+    <p class="eyebrow reveal center">Skills & Technologies</p>
+    <h2 class="reveal d1 center">
+      My Technical <span class="grad">Mastery</span>
+    </h2>
+    <p class="section-intro reveal d2">
+      Every skill is a work in progress. Here's my current learning journey
+      and estimated proficiency across different technologies.
+    </p>
+
+    <div class="grid skills-grid">
+
+      <article class="card glass skill-card reveal">
+        <div class="skill-top">
+          <div class="ico">&lt;/&gt;</div>
+          <span class="skill-percent">80%</span>
+        </div>
+        <h3>HTML</h3>
+        <p>Building structured and accessible web pages.</p>
+        <div class="skill-track">
+          <div class="skill-fill" data-level="80"></div>
+        </div>
+        <span class="skill-level">Proficient</span>
+      </article>
+
+      <article class="card glass skill-card reveal d1">
+        <div class="skill-top">
+          <div class="ico">#</div>
+          <span class="skill-percent">70%</span>
+        </div>
+        <h3>CSS</h3>
+        <p>Styling responsive layouts, animations, and interfaces.</p>
+        <div class="skill-track">
+          <div class="skill-fill" data-level="70"></div>
+        </div>
+        <span class="skill-level">Intermediate</span>
+      </article>
+
+      <article class="card glass skill-card reveal d2">
+        <div class="skill-top">
+          <div class="ico">JS</div>
+          <span class="skill-percent">45%</span>
+        </div>
+        <h3>JavaScript</h3>
+        <p>Learning interactive behavior and dynamic web features.</p>
+        <div class="skill-track">
+          <div class="skill-fill" data-level="45"></div>
+        </div>
+        <span class="skill-level">Learning</span>
+      </article>
+
+      <article class="card glass skill-card reveal d3">
+        <div class="skill-top">
+          <div class="ico">☕</div>
+          <span class="skill-percent">50%</span>
+        </div>
+        <h3>Java</h3>
+        <p>Practicing programming fundamentals and object-oriented code.</p>
+        <div class="skill-track">
+          <div class="skill-fill" data-level="50"></div>
+        </div>
+        <span class="skill-level">Learning</span>
+      </article>
+
+      <article class="card glass skill-card reveal">
+        <div class="skill-top">
+          <div class="ico">SQL</div>
+          <span class="skill-percent">65%</span>
+        </div>
+        <h3>SQL</h3>
+        <p>Writing queries and managing relational data.</p>
+        <div class="skill-track">
+          <div class="skill-fill" data-level="65"></div>
+        </div>
+        <span class="skill-level">Intermediate</span>
+      </article>
+
+      <article class="card glass skill-card reveal d1">
+        <div class="skill-top">
+          <div class="ico">DB</div>
+          <span class="skill-percent">60%</span>
+        </div>
+        <h3>Database Design</h3>
+        <p>Working with tables, keys, relationships, and ER diagrams.</p>
+        <div class="skill-track">
+          <div class="skill-fill" data-level="60"></div>
+        </div>
+        <span class="skill-level">Intermediate</span>
+      </article>
+
+      <article class="card glass skill-card reveal d2">
+        <div class="skill-top">
+          <div class="ico">✦</div>
+          <span class="skill-percent">45%</span>
+        </div>
+        <h3>UI/UX Design</h3>
+        <p>Exploring usability, layouts, and user-friendly interfaces.</p>
+        <div class="skill-track">
+          <div class="skill-fill" data-level="45"></div>
+        </div>
+        <span class="skill-level">Learning</span>
+      </article>
+
+      <article class="card glass skill-card reveal d3">
+        <div class="skill-top">
+          <div class="ico">WEB</div>
+          <span class="skill-percent">55%</span>
+        </div>
+        <h3>Web Development</h3>
+        <p>Combining HTML, CSS, and JavaScript to build websites.</p>
+        <div class="skill-track">
+          <div class="skill-fill" data-level="55"></div>
+        </div>
+        <span class="skill-level">Developing</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section projects" id="projects">
+  <div class="wrap">
+    <p class="eyebrow reveal">Featured projects</p>
+    <h2 class="reveal d1">Things I've <span class="grad">made &amp; imagined</span></h2>
+
+    <div class="grid proj-grid">
+      <article class="project glass reveal">
+        <div class="thumb">
+          <svg viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs><linearGradient id="p1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs>
+            <rect width="600" height="360" fill="url(#p1)"/>
+            <rect x="70" y="60" width="460" height="240" rx="16" fill="#05060b" opacity=".75"/>
+            <rect x="70" y="60" width="460" height="30" rx="16" fill="#fff" opacity=".1"/>
+            <circle cx="92" cy="75" r="5" fill="#fff" opacity=".5"/>
+            <circle cx="110" cy="75" r="5" fill="#fff" opacity=".5"/>
+            <circle cx="128" cy="75" r="5" fill="#fff" opacity=".5"/>
+            <rect x="100" y="120" width="220" height="22" rx="6" fill="#60a5fa"/>
+            <rect x="100" y="156" width="340" height="12" rx="6" fill="#fff" opacity=".35"/>
+            <rect x="100" y="178" width="300" height="12" rx="6" fill="#fff" opacity=".25"/>
+            <rect x="100" y="220" width="110" height="34" rx="17" fill="#8b5cf6"/>
+          </svg>
+        </div>
+        <div class="p-body">
+          <h3>Personal Website</h3>
+          <p>A responsive portfolio that shares my story, interests, and skills.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <a href="#contact" class="plink">View Project <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="project glass reveal d1">
+        <div class="thumb">
+          <svg viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs><linearGradient id="p2" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#2563eb"/></linearGradient></defs>
+            <rect width="600" height="360" fill="url(#p2)"/>
+            <g fill="#05060b" opacity=".78">
+              <rect x="60" y="60" width="150" height="110" rx="10"/>
+              <rect x="225" y="130" width="150" height="110" rx="10"/>
+              <rect x="390" y="60" width="150" height="110" rx="10"/>
+            </g>
+            <g fill="#fff" opacity=".4">
+              <rect x="75" y="80" width="90" height="8" rx="4"/>
+              <rect x="75" y="102" width="120" height="8" rx="4"/>
+              <rect x="75" y="124" width="100" height="8" rx="4"/>
+              <rect x="240" y="150" width="90" height="8" rx="4"/>
+              <rect x="240" y="172" width="120" height="8" rx="4"/>
+              <rect x="240" y="194" width="100" height="8" rx="4"/>
+              <rect x="405" y="80" width="90" height="8" rx="4"/>
+              <rect x="405" y="102" width="120" height="8" rx="4"/>
+              <rect x="405" y="124" width="100" height="8" rx="4"/>
+            </g>
+          </svg>
+        </div>
+        <div class="p-body">
+          <h3>Database Management System</h3>
+          <p>A relational database concept using tables, keys, and SQL queries.</p>
+          <ul class="tags"><li>SQL</li><li>Database Design</li><li>Java</li></ul>
+          <a href="#contact" class="plink">View Project <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="project glass reveal d2">
+        <div class="thumb">
+          <svg viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs><linearGradient id="p3" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#be185d"/><stop offset="1" stop-color="#4f46e5"/></linearGradient></defs>
+            <rect width="600" height="360" fill="url(#p3)"/>
+            <rect x="215" y="30" width="170" height="300" rx="24" fill="#05060b" opacity=".8"/>
+            <rect x="232" y="60" width="136" height="70" rx="12" fill="#fff" opacity=".15"/>
+            <rect x="232" y="144" width="136" height="14" rx="7" fill="#fff" opacity=".3"/>
+            <rect x="232" y="168" width="100" height="14" rx="7" fill="#fff" opacity=".2"/>
+            <rect x="232" y="206" width="136" height="36" rx="18" fill="#60a5fa"/>
+          </svg>
+        </div>
+        <div class="p-body">
+          <h3>Web Application Concept</h3>
+          <p>A web app idea designed around user needs and easy navigation.</p>
+          <ul class="tags"><li>UI/UX</li><li>JavaScript</li><li>Web Dev</li></ul>
+          <a href="#contact" class="plink">View Project <span>→</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section journey" id="journey">
+  <div class="wrap">
+    <p class="eyebrow reveal center">My journey</p>
+    <h2 class="reveal d1 center">One step at a <span class="grad">time</span></h2>
+    <ol class="timeline" id="timeline">
+      <li class="t-item reveal">
+        <span class="dot"></span>
+        <div class="glass t-card"><time>Past</time><h3>Discovered web development</h3><p>Started learning the basics of HTML and CSS.</p></div>
+      </li>
+      <li class="t-item reveal">
+        <span class="dot"></span>
+        <div class="glass t-card"><time>Learning</time><h3>Expanded my toolkit</h3><p>Exploring JavaScript, Java, SQL, and database design.</p></div>
+      </li>
+      <li class="t-item reveal">
+        <span class="dot"></span>
+        <div class="glass t-card"><time>Today</time><h3>Building projects</h3><p>Practicing my skills by making websites and applications.</p></div>
+      </li>
+      <li class="t-item reveal">
+        <span class="dot goal"></span>
+        <div class="glass t-card"><time>Future goal</time><h3>Become a full-stack developer</h3><p>Build useful digital products and keep learning.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section favorites" id="favorites">
+  <div class="wrap">
+    <p class="eyebrow reveal center">Outside the screen</p>
+    <h2 class="reveal d1 center">A few of my <span class="grad">favorite things</span></h2>
+    <p class="section-intro reveal d2">Life is about having fun, discovering new places, and enjoying the little things between learning and building.</p>
+
+    <div class="grid favorites-grid">
+      <article class="favorite-card glass reveal">
+        <div class="favorite-art game-art">🎯</div>
+        <p class="eyebrow">Mobile gaming</p>
+        <h3>Call of Duty: Mobile</h3>
+        <p>Fast matches, teamwork, and improving my gameplay.</p>
+      </article>
+      <article class="favorite-card glass reveal d1">
+        <div class="favorite-art ml-art">⚔️</div>
+        <p class="eyebrow">Strategy &amp; teamwork</p>
+        <h3>Mobile Legends</h3>
+        <p>Choosing heroes, working with a team, and making smart plays.</p>
+      </article>
+      <article class="favorite-card glass reveal d2">
+        <div class="favorite-art travel-art">🌄</div>
+        <p class="eyebrow">Adventure</p>
+        <h3>Travel &amp; explore</h3>
+        <p>Discovering new places, enjoying views, and collecting memories.</p>
+      </article>
+    </div>
+
+    <div class="motto glass reveal">
+      <span class="motto-mark">“</span>
+      <p>My daily routine is simple:</p>
+      <h3><span class="grad">EAT.</span> <span class="grad">SLEEP.</span> <span class="grad">REPEAT.</span></h3>
+      <p class="motto-small">Work hard, have fun, and keep moving forward.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="blob b4"></div>
+  <div class="wrap center">
+    <p class="eyebrow reveal">Contact</p>
+    <h2 class="big reveal d1">Have an Idea?<br><span class="grad">Let's Build Something Great.</span></h2>
+    <div class="cta center-cta reveal d2" id="contactLinks"></div>
+    <p class="note reveal d3" id="contactNote" hidden>✎ Add your email and social URLs in the CONFIG object at the top of script.js.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <p>© <span id="year">2026</span> John Charlie Bacla-an</p>
+    <div class="social" id="footLinks"></div>
+    <button class="top" id="toTop" aria-label="Back to top">↑</button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
